@@ -57,7 +57,7 @@ social-media-accounts:
 # Header settings #
 ###################
 header-menu--links--hidden: false
-# Header menu links
+# Header menu links 
 header-menu--links:
   - display-text: "Home"
     alt-text: "Visit the home page"
