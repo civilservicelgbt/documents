@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, #markdown-toc li:first-child::before, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -55,13 +55,13 @@ img { width: 100%; margin: 25px 0; }
 
 @media only screen and (min-width: 641px) { .caption--lg, .legend-lg, h2, .heading-lg { margin-bottom: 30px; } }
 
-.volunteer--name, .caption--md, .legend-md, legend, h3, .heading-md { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; display: block; margin-top: 0; margin-bottom: 15px; }
+.volunteer--name, .caption--md, .legend-md, legend, h3, #markdown-toc li:first-child::before, .heading-md { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; display: block; margin-top: 0; margin-bottom: 15px; }
 
-@media only screen and (min-width: 641px) { .volunteer--name, .caption--md, .legend-md, legend, h3, .heading-md { font-size: 24px; line-height: 30px; } }
+@media only screen and (min-width: 641px) { .volunteer--name, .caption--md, .legend-md, legend, h3, #markdown-toc li:first-child::before, .heading-md { font-size: 24px; line-height: 30px; } }
 
-@media only print { .volunteer--name, .caption--md, .legend-md, legend, h3, .heading-md { font-size: 18pt; line-height: 1.15; } }
+@media only print { .volunteer--name, .caption--md, .legend-md, legend, h3, #markdown-toc li:first-child::before, .heading-md { font-size: 18pt; line-height: 1.15; } }
 
-@media only screen and (min-width: 641px) { .volunteer--name, .caption--md, .legend-md, legend, h3, .heading-md { margin-bottom: 20px; } }
+@media only screen and (min-width: 641px) { .volunteer--name, .caption--md, .legend-md, legend, h3, #markdown-toc li:first-child::before, .heading-md { margin-bottom: 20px; } }
 
 .caption--sm, .footer--heading, .legend-sm, h4, .heading-sm { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 16px; line-height: 20px; display: block; margin-top: 0; margin-bottom: 15px; }
 
@@ -215,9 +215,9 @@ kbd, code { color: #AD005F; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 @media only screen and (min-width: 641px) { .hint + h2, label + h2, .label + h2, p + h2, dt + h2, dd + h2, li + h2, .page--excerpt + h2, .lead + h2, ul + h2, ol + h2, ul.list--no-styles + h2, ol.list--no-styles + h2 { padding-top: 20px; } }
 
-.hint + h3, label + h3, .label + h3, p + h3, dt + h3, dd + h3, li + h3, .page--excerpt + h3, .lead + h3, ul + h3, ol + h3, ul.list--no-styles + h3, ol.list--no-styles + h3, .hint + h4, label + h4, .label + h4, p + h4, dt + h4, dd + h4, li + h4, .page--excerpt + h4, .lead + h4, ul + h4, ol + h4, ul.list--no-styles + h4, ol.list--no-styles + h4 { padding-top: 5px; }
+.hint + h3, #markdown-toc .hint + li:first-child::before, label + h3, #markdown-toc label + li:first-child::before, .label + h3, #markdown-toc .label + li:first-child::before, p + h3, #markdown-toc p + li:first-child::before, dt + h3, #markdown-toc dt + li:first-child::before, dd + h3, #markdown-toc dd + li:first-child::before, li + h3, #markdown-toc li + li:first-child::before, .page--excerpt + h3, #markdown-toc .page--excerpt + li:first-child::before, .lead + h3, #markdown-toc .lead + li:first-child::before, ul + h3, #markdown-toc ul + li:first-child::before, ol + h3, #markdown-toc ol + li:first-child::before, ul.list--no-styles + h3, ol.list--no-styles + h3, .hint + h4, label + h4, .label + h4, p + h4, dt + h4, dd + h4, li + h4, .page--excerpt + h4, .lead + h4, ul + h4, ol + h4, ul.list--no-styles + h4, ol.list--no-styles + h4 { padding-top: 5px; }
 
-@media only screen and (min-width: 641px) { .hint + h3, label + h3, .label + h3, p + h3, dt + h3, dd + h3, li + h3, .page--excerpt + h3, .lead + h3, ul + h3, ol + h3, ul.list--no-styles + h3, ol.list--no-styles + h3, .hint + h4, label + h4, .label + h4, p + h4, dt + h4, dd + h4, li + h4, .page--excerpt + h4, .lead + h4, ul + h4, ol + h4, ul.list--no-styles + h4, ol.list--no-styles + h4 { padding-top: 10px; } }
+@media only screen and (min-width: 641px) { .hint + h3, #markdown-toc .hint + li:first-child::before, label + h3, #markdown-toc label + li:first-child::before, .label + h3, #markdown-toc .label + li:first-child::before, p + h3, #markdown-toc p + li:first-child::before, dt + h3, #markdown-toc dt + li:first-child::before, dd + h3, #markdown-toc dd + li:first-child::before, li + h3, #markdown-toc li + li:first-child::before, .page--excerpt + h3, #markdown-toc .page--excerpt + li:first-child::before, .lead + h3, #markdown-toc .lead + li:first-child::before, ul + h3, #markdown-toc ul + li:first-child::before, ol + h3, #markdown-toc ol + li:first-child::before, ul.list--no-styles + h3, ol.list--no-styles + h3, .hint + h4, label + h4, .label + h4, p + h4, dt + h4, dd + h4, li + h4, .page--excerpt + h4, .lead + h4, ul + h4, ol + h4, ul.list--no-styles + h4, ol.list--no-styles + h4 { padding-top: 10px; } }
 
 .back-link { font-size: 14px; line-height: 16px; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-decoration: underline; text-decoration-thickness: max(1px, .0625rem); text-underline-offset: 0.1em; display: inline-block; position: relative; margin-top: 15px; margin-bottom: 15px; padding-left: 14px; }
 
@@ -557,9 +557,9 @@ details[open] > details > summary { font-family: "Helvetica Neue", "Helvetica", 
 
 @media only print { details[open] > details > summary { font-size: 14pt; line-height: 1.15; } }
 
-details + h1, details + h2, details + h3, details + h4 { margin-top: 40px; }
+details + h1, details + h2, details + h3, #markdown-toc details + li:first-child::before, details + h4 { margin-top: 40px; }
 
-@media only screen and (min-width: 641px) { details + h1, details + h2, details + h3, details + h4 { margin-top: 60px; } }
+@media only screen and (min-width: 641px) { details + h1, details + h2, details + h3, #markdown-toc details + li:first-child::before, details + h4 { margin-top: 60px; } }
 
 p + details, ul + details { margin-top: 20px; }
 
@@ -585,7 +585,7 @@ legend { box-sizing: border-box; display: table; max-width: 100%; padding: 0; wh
 
 .legend-md { margin-bottom: 15px; }
 
-h1 > legend, h2 > legend, h3 > legend, h4 > legend { margin: 0; font-size: inherit; font-weight: inherit; }
+h1 > legend, h2 > legend, h3 > legend, #markdown-toc li:first-child::before > legend, h4 > legend { margin: 0; font-size: inherit; font-weight: inherit; }
 
 .form-row { margin-bottom: 10px; }
 
@@ -853,7 +853,7 @@ label, .label { display: block; }
 
 .hint { display: block; margin-bottom: 15px; }
 
-h1 > label, h2 > label, h3 > label, h4 > label { margin: 0; }
+h1 > label, h2 > label, h3 > label, #markdown-toc li:first-child::before > label, h4 > label { margin: 0; }
 
 .notification-banner { display: block; position: relative; padding: 10px 0; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; background: #009FE3; }
 
@@ -1075,9 +1075,9 @@ body { margin: 0; background-color: #ffffff; }
 
 @media only screen and (min-width: 641px) { .grid-column-one-quarter { width: 25%; float: left; } }
 
-.grid-column-one-third, #markdown-toc { box-sizing: border-box; width: 100%; padding: 0 15px; }
+.grid-column-one-third { box-sizing: border-box; width: 100%; padding: 0 15px; }
 
-@media only screen and (min-width: 641px) { .grid-column-one-third, #markdown-toc { width: 33.3333%; float: left; } }
+@media only screen and (min-width: 641px) { .grid-column-one-third { width: 33.3333%; float: left; } }
 
 .grid-column-one-half { box-sizing: border-box; width: 100%; padding: 0 15px; }
 
@@ -1249,11 +1249,11 @@ body { margin: 0; background-color: #ffffff; }
 
 .article--publication .page--content { border-top: none; padding-top: 0; }
 
-#markdown-toc { padding-bottom: 25px; }
+#markdown-toc { padding: 25px 0; border-top: 3px solid #e6007e; border-bottom: 3px solid #DEE0E2; }
 
 #markdown-toc li { margin-bottom: 15px; }
 
-#markdown-toc li:first-child { border-top: 3px solid #e6007e; padding-top: 25px; }
+#markdown-toc li:first-child::before { position: relative; display: block; content: "Contents"; }
 
 @media only print { #markdown-toc li:first-child { page-break-before: always; border-top: none !important; } #markdown-toc li:first-child:before { position: relative; display: block; content: "Contents"; color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 24px; line-height: 25px; display: block; margin-top: 0; margin-bottom: 20px; } }
 
@@ -1265,7 +1265,7 @@ body { margin: 0; background-color: #ffffff; }
 
 @media only print { #markdown-content > *:first-child { page-break-before: always; border-top: none !important; } }
 
-@media only print { details.objective { page-break-before: always; } details.objective .volunteer--link::after { display: none; } details.objective .grid-column-one-third, details.objective #markdown-toc { display: inline-block; width: 30%; } }
+@media only print { details.objective { page-break-before: always; } details.objective .volunteer--link::after { display: none; } details.objective .grid-column-one-third { display: inline-block; width: 30%; } }
 
 details.objective ul { padding: 0; }
 
