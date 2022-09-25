@@ -1139,6 +1139,8 @@ body { margin: 0; background-color: #ffffff; }
 
 @media only print { .main-wrapper--auto-spacing:first-child, .main-wrapper--lg { padding-top: 0; } }
 
+.main-wrapper--no-top-padding { padding-top: 0 !important; }
+
 .page--header:after { content: ""; display: block; clear: both; }
 
 @media only print { .page--header { margin: 0; padding: 0 1cm; width: 100%; height: 99%; page-break-before: always; page-break-after: always; background: #AD005F; box-sizing: border-box; } }
@@ -1428,6 +1430,28 @@ details.objective p.milestone-with-details { margin-bottom: 0; }
 #topic--section-groups .topic--groups--description { padding: 20px 0 0; border-top: 5px solid #DEE0E2; }
 
 #topic--section-groups .topic--groups--more { margin: 0 0 30px; border-bottom: none; }
+
+.event--banner { display: block; padding: 30px 0; margin-bottom: 30px; background: url("/assets/images/conference-icons.svg"), #e6007e; background-size: 200px; background-position: center; background-clip: border-box; }
+
+.event--banner h1.event--heading { color: #ffffff; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 36px; line-height: 42px; padding-top: 40px; }
+
+@media only screen and (min-width: 641px) { .event--banner h1.event--heading { font-size: 88px; line-height: 88px; } }
+
+@media only print { .event--banner h1.event--heading { font-size: 60pt; line-height: 1.1; } }
+
+@media only screen and (min-width: 641px) { .event--banner h1.event--heading { margin: 70px 0 15px; } }
+
+.event--banner p.event--date { color: #FFED00; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 32px; line-height: 35px; text-align: right; }
+
+@media only screen and (min-width: 641px) { .event--banner p.event--date { font-size: 48px; line-height: 52px; } }
+
+@media only print { .event--banner p.event--date { font-size: 32pt; line-height: 1.15; } }
+
+section.event--section { margin-bottom: 70px; }
+
+@media only screen and (min-width: 641px) { section.event--section details:first-of-type { border-top: 5px solid #DEE0E2; } section.event--section div.event-paragraph { border-top: 5px solid #DEE0E2; padding: 25px 0; } }
+
+.event--section-title { padding-top: 20px; border-top: 5px solid #e6007e; }
 
 .volunteer--link { display: inline-block; }
 
