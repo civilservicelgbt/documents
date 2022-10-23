@@ -855,7 +855,7 @@ label, .label { display: block; }
 
 h1 > label, h2 > label, h3 > label, #markdown-toc li:first-child::before > label, h4 > label { margin: 0; }
 
-.notification-banner { display: block; position: relative; padding: 10px 0; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; background: #009FE3; }
+.notification-banner { display: block; position: relative; padding: 10px 0; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; }
 
 @media only screen and (min-width: 641px) { .notification-banner { font-size: 19px; line-height: 25px; } }
 
@@ -863,11 +863,61 @@ h1 > label, h2 > label, h3 > label, #markdown-toc li:first-child::before > label
 
 .notification-banner p:last-child { margin-bottom: 0; }
 
-.notification-banner * { color: #ffffff; }
+.notification-banner.background-cyan { background: #007EB4; }
 
-.notification-banner *:link, .notification-banner *:visited { color: #ffffff; }
+.notification-banner.background-cyan * { color: #ffffff; }
 
-.notification-banner *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+.notification-banner.background-cyan *:link, .notification-banner.background-cyan *:visited { color: #ffffff; }
+
+.notification-banner.background-cyan *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-magenta { background: #AD005F; }
+
+.notification-banner.background-magenta * { color: #ffffff; }
+
+.notification-banner.background-magenta *:link, .notification-banner.background-magenta *:visited { color: #ffffff; }
+
+.notification-banner.background-magenta *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-purple { background: #312783; }
+
+.notification-banner.background-purple * { color: #ffffff; }
+
+.notification-banner.background-purple *:link, .notification-banner.background-purple *:visited { color: #ffffff; }
+
+.notification-banner.background-purple *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-yellow { background: #FFED00; }
+
+.notification-banner.background-yellow * { color: #0B0C0C; }
+
+.notification-banner.background-yellow *:link, .notification-banner.background-yellow *:visited { color: #0B0C0C; }
+
+.notification-banner.background-yellow *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-green { background: #00853E; }
+
+.notification-banner.background-green * { color: #ffffff; }
+
+.notification-banner.background-green *:link, .notification-banner.background-green *:visited { color: #ffffff; }
+
+.notification-banner.background-green *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-red { background: #E30613; }
+
+.notification-banner.background-red * { color: #ffffff; }
+
+.notification-banner.background-red *:link, .notification-banner.background-red *:visited { color: #ffffff; }
+
+.notification-banner.background-red *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
+
+.notification-banner.background-black { background: #0B0C0C; }
+
+.notification-banner.background-black * { color: #ffffff; }
+
+.notification-banner.background-black *:link, .notification-banner.background-black *:visited { color: #ffffff; }
+
+.notification-banner.background-black *:focus { box-sizing: border-box; color: #0B0C0C; background-color: #FFED00; background: #FFED00; outline: 3px solid #FFED00; text-decoration: none; }
 
 @media only print { .notification-banner { display: none; } }
 
